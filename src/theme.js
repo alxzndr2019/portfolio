@@ -25,24 +25,25 @@ const theme = extendTheme({
       textStyles: {
         logo: {
           // you can also use responsive styles
-          fontSize: ["48px", "30px"],
+          fontSize: ["25px", "30px"],
           fontWeight: "bold",
           lineHeight: "110%",
           letterSpacing: "-2%",
           color:"#6123cc"
         },
         navitem: {
-          fontSize: ["36px", "19px"],
+          fontSize: ["10px", "19px"],
           fontWeight: "medium",
           lineHeight: "110%",
         },
         herotext:{
-          fontSize: ["36px", "60px"],
+          fontSize: ["25px", "60px"],
           fontWeight: "bold",
           lineHeight: "110%",
         },
+        
         herotextsub:{
-          fontSize: ["36px", "20px"],
+          fontSize: ["10px", "20px"],
           fontWeight: "medium",
           lineHeight: "110%",
         },

@@ -9,7 +9,7 @@ import {
 
 function Header(){
   return (
-   <Box w="70%" mx="auto" mb={5}>
+   <Box w={{base:"100%", md:"60%", lg:"70%"}}  mx="auto" mb={5}>
         <Flex>
   
  <Box  >

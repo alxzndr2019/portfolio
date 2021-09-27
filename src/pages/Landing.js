@@ -22,8 +22,8 @@ import prodesign from "./prodesign.svg"
 
 function Landing(){
   return (
-   <Box w="70%" mx="auto" >
-   <SimpleGrid pt ={10} columns={2} spacing={10}>
+   <Box w={{base:"90%",md:"60%",lg:"70%"}} mx="auto" >
+   <SimpleGrid pt ={10} columns={{base:1, md:2, lg:2}} spacing={10}>
   <Box >
 <Text textStyle="herotext" textAlign="left" pt="30%">
     Hi👋🏾, I'm Alex
