@@ -1,0 +1,144 @@
+import React from 'react';
+import {
+  Box,
+  Text,
+  SimpleGrid,
+  Button,
+  Center,
+  HStack,
+  Image,
+  Progress
+  
+} from '@chakra-ui/react';
+import image1 from "./character 7.svg"
+import instagram from "./insta.png"
+import github from "./github.png"
+import linkedIn from "./linkedIn.png"
+import facebook from "./facebook.png"
+import twitter from "./twitter.png"
+function Landing(){
+  return (
+   <Box w="70%" mx="auto" >
+   <SimpleGrid pt ={10} columns={2} spacing={10}>
+  <Box >
+<Text textStyle="herotext" textAlign="left" pt="30%">
+    Hi👋🏾, I'm Alex
+</Text>
+<Text textStyle="herotextsub" textAlign="left" pt={3}>
+    I am a JavaScript fullstack web developer, primarily focused on the <b>MERN</b>  Stack. Why? It's just the best😏
+<Box pt={6}>
+  <HStack spacing="50px">
+    <Box  as = "a" href="https://www.github.com/alxzndr2019">
+<Image  src={github}/>
+    </Box>
+    <Box  as ="a" href="https://www.instagram.com/alx.zndr/" >
+  <Image src={instagram}/>
+
+    </Box>
+    <Box as ="a" href="https://www.twitter.com/its_alxjnr/">
+  <Image  src={twitter}/>
+
+    </Box>
+    <Box  as ="a" href="https://web.facebook.com/oomiunu" >
+  <Image src={facebook}/>
+
+    </Box>
+  
+
+ 
+
+  </HStack>
+</Box>
+
+</Text>
+  </Box>
+  <Box >
+  <Image   h="90%"  pt="30%"  src={image1} alt="" />
+  </Box>
+  
+</SimpleGrid>
+
+<Center pt={10}>
+    <Text textStyle="wwd" pb="10">What I do😤</Text>
+</Center>
+
+<Box w="100%" bg="fade.100" boxShadow="lg" borderRadius={20}>
+   <SimpleGrid columns={3} spacing={10} p={20}>
+   <Box >
+
+<Text textStyle="herotextsub" textAlign="left" pt={3}>
+<b>Product Design</b>
+<Box pt={6}>
+    <p>I design products UI/UX that reach the maximum efficiency as possible</p>
+</Box>
+
+</Text>
+  </Box>
+  <Box >
+
+<Text textStyle="herotextsub" textAlign="left" pt={3}>
+<b>Frontend Development</b>
+<Box pt={6}>
+    <p>I use React.js and chakra UI to develop the best UI's for your product, pretty good at that😏</p>
+</Box>
+
+</Text>
+  </Box>
+  <Box >
+
+<Text textStyle="herotextsub" textAlign="left" pt={3}>
+    <b>Backend Development</b>
+<Box pt={6}>
+<p>I use Node.js, Express and MongoDB to develop a secure backend for your product</p>
+</Box>
+
+</Text>
+  </Box>
+   </SimpleGrid>
+</Box>
+<Box>
+    <Center p={10}>
+        <Text textStyle="wwd">Skills</Text>
+    </Center>
+    <SimpleGrid columns={2} spacing={10}>
+         <Box >
+        <Text textAlign="left"><b>React Js </b></Text><Progress colorScheme="purple" size="lg"  value={89}/>   
+        <Box h={10}/>
+        <Text textAlign="left"><b>ChakraUI </b></Text><Progress colorScheme="purple" size="lg"  value={100}/>
+        <Box h={10}/>
+        <Text textAlign="left"><b>Express</b></Text><Progress colorScheme="purple" size="lg"  value={80}/>
+        <Box h={10}/>
+        <Text textAlign="left"><b>Node </b></Text><Progress colorScheme="purple" size="lg"   value={100}/>
+        <Box h={10}/>
+        <Text textAlign="left"><b>UI/UX </b></Text><Progress colorScheme="purple" size="lg"  value={70}/>
+        <Box h={10}/>
+        <Text textAlign="left"><b>Git </b></Text><Progress colorScheme="purple" size="lg"  value={100}/>
+        <Box h={10}/>
+        <Text textAlign="left"><b>MongoDB </b></Text><Progress colorScheme="purple" size="lg"   value={80}/>
+    </Box>
+    <Box my="auto" p="15%" bg="fade.100" borderRadius={20} boxShadow="lg" >
+        <Text textStyle="herotext" textColor="purple.600">Whats up... you Checking me out?😏 </Text>
+    </Box>
+    </SimpleGrid>
+   
+</Box>
+<Box p={20}>
+<Center p={10}>
+        <Text textStyle="wwd">Projects</Text>
+    </Center>
+    <Text  textStyle="herotext">I haven't done any public ones yet. I respect my clients privacy not to post their projects on here 🤫🔐</Text>
+</Box>
+
+<Box>
+    <Center>
+        <Text fontSize="sm">
+            POWERED BY MEEEEEEE
+        </Text>
+    </Center>
+</Box>
+   </Box>
+   
+  );
+}
+
+export default Landing;
