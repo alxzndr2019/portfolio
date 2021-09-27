@@ -29,7 +29,7 @@ const theme = extendTheme({
           fontWeight: "bold",
           lineHeight: "110%",
           letterSpacing: "-2%",
-          color:"#2130ff"
+          color:"#6123cc"
         },
         navitem: {
           fontSize: ["36px", "19px"],

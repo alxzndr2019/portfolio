@@ -10,12 +10,16 @@ import {
   Progress
   
 } from '@chakra-ui/react';
-import image1 from "./character 7.svg"
+import image1 from "./image.svg"
 import instagram from "./insta.png"
 import github from "./github.png"
 import linkedIn from "./linkedIn.png"
 import facebook from "./facebook.png"
 import twitter from "./twitter.png"
+import frontend from "./frontend.svg"
+import backend from "./backend.svg"
+import prodesign from "./prodesign.svg"
+
 function Landing(){
   return (
    <Box w="70%" mx="auto" >
@@ -30,6 +34,9 @@ function Landing(){
   <HStack spacing="50px">
     <Box  as = "a" href="https://www.github.com/alxzndr2019">
 <Image  src={github}/>
+    </Box>
+    <Box  as = "a" href="https://www.linkedin.com/in/ohioze-omiunu-2b2968169/">
+<Image  src={linkedIn}/>
     </Box>
     <Box  as ="a" href="https://www.instagram.com/alx.zndr/" >
   <Image src={instagram}/>
@@ -64,7 +71,8 @@ function Landing(){
 
 <Box w="100%" bg="fade.100" boxShadow="lg" borderRadius={20}>
    <SimpleGrid columns={3} spacing={10} p={20}>
-   <Box >
+   <Box p={10} >
+   <Image  src={prodesign}/>
 
 <Text textStyle="herotextsub" textAlign="left" pt={3}>
 <b>Product Design</b>
@@ -74,7 +82,8 @@ function Landing(){
 
 </Text>
   </Box>
-  <Box >
+  <Box  pt={12}>
+  <Image  src={frontend}/>
 
 <Text textStyle="herotextsub" textAlign="left" pt={3}>
 <b>Frontend Development</b>
@@ -85,6 +94,7 @@ function Landing(){
 </Text>
   </Box>
   <Box >
+  <Image  src={backend}/>
 
 <Text textStyle="herotextsub" textAlign="left" pt={3}>
     <b>Backend Development</b>
