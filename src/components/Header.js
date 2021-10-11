@@ -16,7 +16,7 @@ function Header(){
      <Text textStyle ="logo" p={5}>Alexander</Text>
  </Box>
     <Spacer />
-    <Box  h="10" >
+    {/* <Box  h="10">
         <Flex>
             <Box  p={2}>
                  <Text textStyle ="navitem" p={5} >About</Text>
@@ -31,7 +31,7 @@ function Header(){
                 <Text textStyle ="navitem" p={5} >Projects</Text>
             </Box>
         </Flex>
-    </Box>
+    </Box> */}
   </Flex>
    </Box>
   );

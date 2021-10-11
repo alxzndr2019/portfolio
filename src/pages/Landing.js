@@ -23,7 +23,7 @@ import prodesign from "./prodesign.svg"
 function Landing(){
   return (
    <Box w={{base:"90%",md:"60%",lg:"70%"}} mx="auto" >
-   <SimpleGrid pt ={10} columns={{base:1, md:2, lg:2}} spacing={10}>
+   <SimpleGrid pt ={10} minChildWidth="160px" spacing={10}>
   <Box >
 <Text textStyle="herotext" textAlign="left" pt="30%">
     Hi👋🏾, I'm Alex
@@ -70,7 +70,7 @@ function Landing(){
 </Center>
 
 <Box w="100%" bg="fade.100" boxShadow="lg" borderRadius={20}>
-   <SimpleGrid columns={3} spacing={10} p={20}>
+   <SimpleGrid minChildWidth="160px" spacing={10} p={20}>
    <Box p={10} >
    <Image  src={prodesign}/>
 
@@ -110,7 +110,7 @@ function Landing(){
     <Center p={10}>
         <Text textStyle="wwd">Skills</Text>
     </Center>
-    <SimpleGrid columns={2} spacing={10}>
+    <SimpleGrid minChildWidth="160px" spacing={10}>
          <Box >
         <Text textAlign="left"><b>React Js </b></Text><Progress colorScheme="purple" size="lg"  value={89}/>   
         <Box h={10}/>
