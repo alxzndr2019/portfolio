@@ -37,18 +37,18 @@ const theme = extendTheme({
           lineHeight: "110%",
         },
         herotext:{
-          fontSize: ["25px", "60px"],
+          fontSize: ["40px", "60px"],
           fontWeight: "bold",
           lineHeight: "110%",
         },
         
         herotextsub:{
-          fontSize: ["10px", "20px"],
+          fontSize: ["20px", "20px"],
           fontWeight: "medium",
           lineHeight: "110%",
         },
         wwd: {
-          fontSize: ["36px", "30px"],
+          fontSize: ["30px", "30px"],
           fontWeight: "medium",
           lineHeight: "110%",
         },

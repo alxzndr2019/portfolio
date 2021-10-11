@@ -23,7 +23,7 @@ import prodesign from "./prodesign.svg"
 function Landing(){
   return (
    <Box w={{base:"90%",md:"60%",lg:"70%"}} mx="auto" >
-   <SimpleGrid pt ={10} minChildWidth="160px" spacing={10}>
+   <SimpleGrid pt ={{base:1,md:10,lg:10}} minChildWidth="160px" spacing={10}>
   <Box >
 <Text textStyle="herotext" textAlign="left" pt="30%">
     Hi👋🏾, I'm Alex
@@ -71,10 +71,10 @@ function Landing(){
 
 <Box w="100%" bg="fade.100" boxShadow="lg" borderRadius={20}>
    <SimpleGrid minChildWidth="160px" spacing={10} p={20}>
-   <Box p={10} >
+   <Box p={{base:2 ,md:10, lg:10}} >
    <Image  src={prodesign}/>
 
-<Text textStyle="herotextsub" textAlign="left" pt={3}>
+<Text textStyle="herotextsub" textAlign ={{base:"center",md:"left",lg:"left"}} pt={3}>
 <b>Product Design</b>
 <Box pt={6}>
     <p>I design products UI/UX that reach the maximum efficiency as possible</p>
@@ -85,7 +85,7 @@ function Landing(){
   <Box  pt={12}>
   <Image  src={frontend}/>
 
-<Text textStyle="herotextsub" textAlign="left" pt={3}>
+<Text textStyle="herotextsub" textAlign ={{base:"center",md:"left",lg:"left"}} pt={3}>
 <b>Frontend Development</b>
 <Box pt={6}>
     <p>I use React.js and chakra UI to develop the best UI's for your product, pretty good at that😏</p>
@@ -96,7 +96,7 @@ function Landing(){
   <Box >
   <Image  src={backend}/>
 
-<Text textStyle="herotextsub" textAlign="left" pt={3}>
+<Text textStyle="herotextsub" textAlign ={{base:"center",md:"left",lg:"left"}} pt={3}>
     <b>Backend Development</b>
 <Box pt={6}>
 <p>I use Node.js, Express and MongoDB to develop a secure backend for your product</p>
