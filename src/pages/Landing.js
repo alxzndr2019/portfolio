@@ -7,7 +7,11 @@ import {
   Center,
   HStack,
   Image,
-  Progress
+  Progress,
+  VStack,
+  Heading,
+  Divider,
+
   
 } from '@chakra-ui/react';
 import image1 from "./image.svg"
@@ -19,6 +23,7 @@ import twitter from "./twitter.png"
 import frontend from "./frontend.svg"
 import backend from "./backend.svg"
 import prodesign from "./prodesign.svg"
+import vote from "./vote.png"
 
 function Landing(){
   return (
@@ -132,11 +137,28 @@ function Landing(){
     </SimpleGrid>
    
 </Box>
-<Box p={20}>
+<Box pb={2}>
 <Center p={10}>
         <Text textStyle="wwd">Projects</Text>
     </Center>
-    <Text  textStyle="herotext">I haven't done any public ones yet. I respect my clients privacy not to post their projects on here 🤫🔐</Text>
+    <Box p='4' borderWidth='1px' rounded={'lg'}
+        bg="white"
+        boxShadow={'lg'} 
+        p={8} >
+            <VStack spacing={5}>
+            <Image
+  boxSize="300px"
+  src={vote}
+  alt="Voteasy"
+/>
+<Box p='2'><Heading>Voteasy</Heading></Box>
+            <Divider/>
+            <Text>Voteasy is a centeralized voting platform</Text>
+            <Heading>Check it out</Heading>
+            <Button as ='a' href="https://voteasy.netlify.app"> Visit site </Button>
+            </VStack>
+            
+   </Box>
 </Box>
 
 <Box>
