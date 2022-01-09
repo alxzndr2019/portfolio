@@ -24,6 +24,7 @@ import frontend from "./frontend.svg"
 import backend from "./backend.svg"
 import prodesign from "./prodesign.svg"
 import vote from "./vote.png"
+import pharm from "./saelpharm.png"
 
 function Landing(){
   return (
@@ -153,9 +154,27 @@ function Landing(){
 />
 <Box p='2'><Heading>Voteasy</Heading></Box>
             <Divider/>
-            <Text>Voteasy is a centeralized voting platform</Text>
+            <Text>Voteasy is a centeralized voting platform, created using React and  Chakra UI for the frontend and NodeJS and Express for the backend</Text>
             <Heading>Check it out</Heading>
             <Button as ='a' href="https://voteasy.netlify.app"> Visit site </Button>
+            </VStack>
+            
+   </Box>
+   <Box p='4'  mt={5} borderWidth='1px' rounded={'lg'}
+        bg="white"
+        boxShadow={'lg'} 
+        p={8} >
+            <VStack spacing={5}>
+            <Image
+  boxSize="300px"
+  src={pharm}
+  alt="Sael"
+/>
+<Box p='2' ><Heading>Sael Pharmacy</Heading></Box>
+            <Divider/>
+            <Text>A Website for a Pharmacy. Created using Bootstrap</Text>
+            <Heading>Check it out</Heading>
+            <Button as ='a' href="https://saelpharmacies.netlify.app/"> Visit site </Button>
             </VStack>
             
    </Box>
@@ -164,7 +183,7 @@ function Landing(){
 <Box>
     <Center>
         <Text fontSize="sm">
-            POWERED BY MEEEEEEE
+            POWERED BY ALXZNDR
         </Text>
     </Center>
 </Box>
