@@ -214,12 +214,20 @@ function Landing() {
           </Box>
         </SimpleGrid>
       </Box>
-      {/* <Box pb={2}>
-        <Center p={10}>
-          <Text textStyle="wwd">Projects</Text>
-        </Center>
-      </Box>
       <Box pb={2}>
+        <Center p={10}>
+          <Text textStyle="wwd">Blog</Text>
+        </Center>{' '}
+        <Box pb={2}>
+          <a
+            href="https://alxzndr.hashnode.dev/"
+            style={{ textDecoration: 'underline' }}
+          >
+            Alxzndr's Engineering
+          </a>
+        </Box>
+      </Box>
+      {/* <Box pb={2}>
         <Center p={10}>
           <Text textStyle="wwd">Projects</Text>
         </Center>
